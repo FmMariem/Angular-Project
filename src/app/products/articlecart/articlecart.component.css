@@ -1,0 +1,11 @@
+.img-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.custom-card-title {
+ 
+ 
+    height: 60px; /* Réglez la hauteur souhaitée */
+    overflow: hidden; /* Cache tout texte dépassant de la hauteur spécifiée */
+    text-overflow: ellipsis; /* Ajoute des points de suspension (...) pour indiquer qu'il y a plus de texte */
+}

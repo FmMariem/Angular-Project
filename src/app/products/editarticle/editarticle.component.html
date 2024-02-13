@@ -1,0 +1,40 @@
+<div class="form-wrapper">
+    <div class="container my-5">
+    <h2>Modifier un article</h2>
+    <div class="mobile-form">
+    <div class="mb-3">
+    <label for="reference" class="form-label">Référence</label>
+    <input type="text" name="reference" [(ngModel)]="produit.reference" class="form-control" id="reference" placeholder="Référence">
+    </div>
+    <div class="mb-3">
+    <label for="designation" class="form-label">Désignation</label>
+    <input type="text" name="designation" [(ngModel)]="produit.designation" class="form-control" id="designation" placeholder="Désignation">
+    </div>
+    <div class="mb-3">
+    <label for="marque" class="form-label">Marque</label>
+    <input type="text" name="marque" [(ngModel)]="produit.marque" class="form-control" id="marque" placeholder="Marque">
+    </div>
+    <div class="mb-3">
+    <label for="prix" class="form-label">Prix</label>
+    <input type="text" name="prix" [(ngModel)]="produit.prix" class="form-control" id="prix" placeholder="Prix">
+    </div>
+    <div class="mb-3">
+    <label for="quantite" class="form-label">Quantité</label>
+    <input type="text"  name="quantite" [(ngModel)]="produit.qtestock" class="form-control" id="quantite" placeholder="Quantité">
+    </div>
+    <div class="mb-3">
+    <label for="image" class="form-label">Image</label>
+    <input type="text"  name="image" [(ngModel)]="produit.imageart" class="form-control" id="image" placeholder="Image">
+    </div>
+    <div class="mb-3">
+    <label for="scategorie" class="form-label">Sous Categorie</label>
+    <input type="text" name="scategorie" [(ngModel)]="produit.scategorieID" class="form-control" id="scategorie" placeholder="scategorie">
+    </div>
+    <div class="mb-3">
+    <button type="button" class="btn btn-success" (click)="sauvegarder()">Enregistrer</button>
+    <button type="button" class="btn btn-danger" routerLink="/articles/listarttable">Annuler</button>
+    </div>
+    </div>
+    </div>
+    </div>
+     

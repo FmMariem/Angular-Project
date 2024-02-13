@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+    <div class="col-3 pt-5 text-center" *ngFor="let pr of tabproduit">
+        <div class="card"   style="width: 300px; height: 490px;">
+            <img src={{pr.imageart}} class="img-center py-3" width="180" height="180" />
+            <h5 class="card-title custom-card-title pt-3 py-3">{{pr.designation}}</h5>
+            <div class="card-body pt-4">
+               
+                <ul class="list-group list-group-flush pb-2">
+                    <li class="list-group-item">{{pr.reference}}</li>
+                    <li class="list-group-item">{{pr.marque}}</li>
+                    <li class="list-group-item">{{pr.prix}}</li>
+                  </ul>
+                  <div class="pt-3">
+                <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>

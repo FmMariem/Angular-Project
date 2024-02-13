@@ -1,0 +1,26 @@
+
+<body>
+    <button type="button" class="btn btn-success mb-3" routerLink="/categories/createcat">Ajouter une catégorie</button>
+
+    <table *ngIf="tab.length" datatable class="table table-hover table-striped table-bordered mb-5">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Nom</th>
+            
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let g of tab">
+                <td><img src={{g.imagecategorie}} width="80" height="80"/></td>
+                <td>{{g.nomcategorie}}</td>
+                
+                
+                <td><button class="btn btn-warning">Modifier</button></td>
+                <td><button (click)="deleteCategorie(g._id)" class="btn btn-default"><i class="bi bi-trash-fill" style="color:red"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>

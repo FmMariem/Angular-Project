@@ -1,0 +1,21 @@
+<div class="form-wrapper">
+<div class="container my-5">
+<h2>Ajouter une catégorie</h2>
+<div class="mobile-form">
+<div class="mb-3">
+
+<label for="nomcategorie" class="form-label">Nom catégorie</label>
+<input type="text" name="nomcategorie" [(ngModel)]="categorie.nomcategorie" class="form-control" id="nomcategorie" placeholder="Nom categorie">
+</div>
+<div class="mb-3">
+<label for="imagecategorie" class="form-label">Image categorie</label>
+<input type="text" name="imagecategorie" [(ngModel)]="categorie.imagecategorie" class="form-control" id="Image categorie" placeholder="imagecategorie">
+</div>
+
+<div class="mb-3">
+<button type="button" class="btn btn-success" (click)="sauvegarder()" routerLink="/articles/listarttable">Enregistrer</button>
+<button type="button" class="btn btn-info" routerLink="/articles/listarttable">Annuler</button>
+</div>
+</div>
+</div>
+</div>
